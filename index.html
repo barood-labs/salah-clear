@@ -1,0 +1,21 @@
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salah Clear — Prayer Times, Qibla, Azkar (no ads)</title><meta name="description" content="Ad-free prayer times, Qibla compass and morning/evening azkar. Works offline, no tracking. Arabic & English.">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f5132"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1 id="appname">Salah Clear</h1><button id="langBtn" class="pill">العربية</button></header>
+<nav><button data-tab="times" class="on" data-i="times">Times</button><button data-tab="qibla" data-i="qibla">Qibla</button><button data-tab="azkar" data-i="azkar">Azkar</button><button data-tab="settings" data-i="settings">Settings</button></nav>
+<main>
+<section id="times" class="tab on"><div class="card"><div id="place" class="muted"></div><div id="dates" class="muted"></div><div id="next" class="big"></div><div id="count" class="muted"></div></div><table id="ptable"></table><p class="muted small" id="notifNote"></p></section>
+<section id="qibla" class="tab"><div class="card center"><div id="compass"><div id="dial"><span class="n">N</span><div id="needle"></div><div id="kaaba">🕋</div></div></div><p id="qdeg" class="big"></p><p id="qhint" class="muted small"></p><button id="qStart" class="btn" data-i="startCompass">Start compass</button></div></section>
+<section id="azkar" class="tab"><div class="seg"><button data-az="morning" class="on" data-i="morning">Morning</button><button data-az="evening" data-i="evening">Evening</button></div><div id="azlist"></div><p class="muted small" data-i="azSrc"></p></section>
+<section id="settings" class="tab"><div class="card">
+<label><span data-i="location">Location</span><button id="gps" class="btn" data-i="useGps">Use my location</button></label>
+<label><span data-i="city">Or pick a city</span><select id="city"></select></label>
+<label><span data-i="method">Calculation method</span><select id="method"></select></label>
+<label><span data-i="madhab">Asr (madhab)</span><select id="madhab"><option value="Shafi" data-i="shafi">Standard (Shafi'i, Maliki, Hanbali)</option><option value="Hanafi" data-i="hanafi">Hanafi</option></select></label>
+<label><span data-i="clock">Clock</span><select id="h24"><option value="0">12h</option><option value="1">24h</option></select></label>
+<label><span data-i="theme">Theme</span><select id="theme"><option value="green" data-i="green">Green</option><option value="night" data-i="night">Night</option><option value="sand" data-i="sand">Sand (supporters)</option></select></label>
+<label><span data-i="notif">Prayer notifications</span><button id="notifBtn" class="btn" data-i="enable">Enable</button></label>
+</div><div class="card"><h3 data-i="support">Support Salah Clear</h3><p data-i="supportTxt">Everything is free with no ads. If it helps you, a one-time $2.99 supporter unlock says thanks and unlocks extra themes.</p><a id="supportLink" class="btn" target="_blank" rel="noopener" data-i="supportBtn">Become a supporter</a></div>
+<p class="small"><a href="privacy.html" data-i="privacy">Privacy policy</a> · <span data-i="noTrack">No ads, no tracking, no account. Everything stays on your device.</span></p></section>
+</main><script src="adhan.js"></script><script src="cities.js"></script><script src="azkar.js"></script><script src="app.js"></script></body></html>

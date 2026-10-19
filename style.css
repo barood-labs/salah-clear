@@ -1,0 +1,14 @@
+:root{--bg:#f4f8f5;--fg:#13261b;--card:#fff;--acc:#0f5132;--mut:#5b6b61}
+body.night{--bg:#0d1512;--fg:#e8f1ec;--card:#16221c;--acc:#5fd39a;--mut:#9ab0a3}
+body.sand{--bg:#f7f0e3;--fg:#3a2c17;--card:#fffaf0;--acc:#8a5a14;--mut:#7a6a52}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;background:var(--bg);color:var(--fg);max-width:720px;margin:auto;padding-bottom:40px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--acc);color:#fff}h1{font-size:1.2rem;margin:0}
+nav{display:flex;position:sticky;top:0;background:var(--card);box-shadow:0 1px 3px #0002;z-index:2}nav button,.seg button{flex:1;padding:12px 4px;border:0;background:none;color:var(--fg);font:inherit;cursor:pointer;border-bottom:3px solid transparent}nav button.on,.seg button.on{border-color:var(--acc);font-weight:700}
+main{padding:12px}.tab{display:none}.tab.on{display:block}.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px #0001}
+.big{font-size:1.6rem;font-weight:700;margin:6px 0}.muted{color:var(--mut)}.small{font-size:.85rem}.center{text-align:center}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}td{padding:14px 16px;border-bottom:1px solid #0001;font-size:1.1rem}td:last-child{text-align:end;font-variant-numeric:tabular-nums}tr.nx{background:color-mix(in srgb,var(--acc) 15%,transparent);font-weight:700}
+.btn,.pill{display:inline-block;padding:10px 14px;border-radius:10px;border:0;background:var(--acc);color:#fff;font:inherit;text-decoration:none;cursor:pointer}.pill{background:#fff3;padding:6px 12px}
+label{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #0001;flex-wrap:wrap}select{padding:8px;border-radius:8px;font:inherit;max-width:100%}
+#compass{display:flex;justify-content:center;margin:10px}#dial{position:relative;width:240px;height:240px;border-radius:50%;border:6px solid var(--acc);transition:transform .2s}#dial .n{position:absolute;top:6px;left:50%;transform:translateX(-50%);font-weight:700;color:#c00}
+#needle{position:absolute;left:50%;top:50%;width:4px;height:105px;background:var(--acc);transform-origin:50% 100%;margin-left:-2px;margin-top:-105px;border-radius:2px}#kaaba{position:absolute;left:50%;top:50%;font-size:28px;transform-origin:0 0}
+.seg{display:flex;background:var(--card);border-radius:12px;margin-bottom:12px}.z{background:var(--card);border-radius:14px;padding:16px;margin-bottom:10px;cursor:pointer;user-select:none}.z .ar{font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;font-size:1.35rem;line-height:2.1;direction:rtl;text-align:right}.z .cnt{float:inline-end;background:var(--acc);color:#fff;border-radius:20px;padding:4px 12px;font-weight:700}.z.done{opacity:.45}
